@@ -1,19 +1,21 @@
 package com.example.moodtracker;
 
 class MoodItem {
-    private String head;
-    private String desc;
 
-    MoodItem( String head, String desc){
-        this.head = head;
-        this.desc = desc;
+    private int image;
+    private int intRepresentation;
+
+    MoodItem(int image, int intRepresentation){
+
+        this.image = image;
+        this.intRepresentation = intRepresentation;
     }
 
-    String getHead(){
-        return head;
+    public int getImage(){
+        return image;
     }
 
-    String getDesc(){
-        return desc;
+    public int getIntRepresentation(){
+        return this.intRepresentation;
     }
 }
